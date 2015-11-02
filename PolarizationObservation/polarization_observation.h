@@ -2,10 +2,13 @@
 #define POLARIZATION_OBSERVATION_H
 
 #include <QtWidgets/QMainWindow>
+
 #include "ui_polarization_observation.h"
 
-class PolarizationObservation : public QMainWindow
-{
+#include "attribute_table.h"
+#include "polar_analy_contrl.h"
+
+class PolarizationObservation : public QMainWindow {
 	Q_OBJECT
 
 public:
@@ -13,7 +16,10 @@ public:
 	~PolarizationObservation();
 
 private:
+	void UpdateGUI();
+
 	Ui::PolarizationObservationClass ui;
+	ic::PolarAnalyContrl pa_contrl_;
 };
 
 #endif // POLARIZATION_OBSERVATION_H

@@ -50,6 +50,18 @@
     <ClCompile Include="GeneratedFiles\qrc_polarization_observation.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
+    <ClCompile Include="polar_analy_contrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="attribute_table.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_polar_analy_contrl.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_polar_analy_contrl.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="polarization_observation.h">
@@ -61,10 +73,16 @@
     <CustomBuild Include="polarization_observation.qrc">
       <Filter>Resource Files</Filter>
     </CustomBuild>
+    <CustomBuild Include="polar_analy_contrl.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GeneratedFiles\ui_polarization_observation.h">
       <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="attribute_table.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
