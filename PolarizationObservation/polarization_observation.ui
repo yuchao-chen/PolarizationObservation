@@ -69,7 +69,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>Move:</string>
+      <string>Go to:</string>
      </property>
     </widget>
     <widget class="QDoubleSpinBox" name="move_spinbox">

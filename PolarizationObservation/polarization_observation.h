@@ -14,9 +14,14 @@ class PolarizationObservation : public QMainWindow {
 public:
 	PolarizationObservation(QWidget *parent = 0);
 	~PolarizationObservation();
-
+private slots:
+	void GoHomeSlot();
+	void GoToSlot();
+	void UpdateMsgSlot(QString msg);
 private:
 	void UpdateGUI();
+	void GoTo(double pos);
+	void GoHome();
 
 	Ui::PolarizationObservationClass ui;
 	ic::PolarAnalyContrl pa_contrl_;

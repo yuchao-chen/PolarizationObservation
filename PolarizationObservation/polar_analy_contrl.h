@@ -11,11 +11,13 @@ namespace ic {
 	public:
 		PolarAnalyContrl();
 		~PolarAnalyContrl();
-
 		void set(data::AttributeTablePtr config);
 		data::AttributeTablePtr get(data::AttributeTablePtr config);
+	signals:
+		void UpdateMsg(QString msg);
 	private:
 		std::vector<std::string> FindAvailablePorts();
+			data::AttributeTablePtr config_;
 	};
 }
 #endif
